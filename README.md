@@ -1,6 +1,6 @@
 # Gameboard
 
-This creates a 3-dimensional grid object with 2 fixed-length dimensions (x, y) and a third unfixed-length dimension (z).
+This library creates a 3-dimensional grid object with 2 fixed-length dimensions (x, y) and a third unfixed-length dimension (z).
 
 Example use cases include multi-agent simulations where multiple agents can be placed on a 2D grid and be in the same cell, or board games where the board is a 2D grid and pieces can be stacked on top of or adjacent to each other.
 
