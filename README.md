@@ -44,6 +44,9 @@ print(board)
 # [[7], [8], [9]]]
 ```
 
+The `fill` parameter is set to `True` for the example, where all squares are numbered.
+If you set the `fill` parameter to `False` ***or*** do not specify (default is `False`), all z-axis arrays will be empty.
+
 ## Warning
 
 This project does not currently work with negative indices for the y-coordinate when accessing the grid.
