@@ -19,7 +19,7 @@ pip install gameboard
 ## Example Usage
 
 ```python
-from gameboard import grid
+from gameboard.grid import grid
 
 board = grid(grid_size = 3, fill = True)
 print(board)
