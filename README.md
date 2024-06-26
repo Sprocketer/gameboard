@@ -42,6 +42,16 @@ print(board)
 # [[4], [5], [6, 'a']],
 #
 # [[7], [8], [9]]]
+
+board[2, 2].remove(3)
+print(board)
+
+# [[[1], [2], []],
+#
+# [[4], [5], [6, 'a']],
+#
+# [[7], [8], [9]]]
+
 ```
 
 The `fill` parameter is set to `True` for the example, where all squares are numbered.
@@ -51,4 +61,4 @@ If you set the `fill` parameter to `False` ***or*** do not specify (default is `
 
 This project does not currently work with negative indices for the y-coordinate when accessing the grid.
 
-This project is in an early development stage and may not be suitable for all use cases. For ease of use, the `__iter__` dunder method has been implemented for both the y-axis and x-axis arrays, and the `append` method has been implemented for adding elements to the z-dimension arrays.
+This project is in an early development stage and may not be suitable for all use cases. For ease of use, the `__iter__` dunder method has been implemented for both the y-axis and x-axis arrays, and the `append`/`remove` methods work for adding and removing elements in the z-dimension arrays.
