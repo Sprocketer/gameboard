@@ -52,6 +52,14 @@ print(board)
 #
 # [[7], [8], [9]]]
 
+print(2 in board[1, 2])
+
+# True
+
+print(2 in board[2, 1])
+
+# False
+
 ```
 
 The `fill` parameter is set to `True` for the example, where all squares are numbered.
