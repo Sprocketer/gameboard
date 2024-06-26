@@ -60,6 +60,20 @@ print(2 in board[2, 1])
 
 # False
 
+position = [1, 0]
+print(board[position])
+
+# [8]
+
+data = [2, 3, 4]
+board[position].append(3)
+board[position].append(data)
+
+# [[[1], [2], []],
+#
+# [[4], [5], [6, 'a']],
+#
+# [[7], [8, 3, [2, 3, 4]], [9]]]
 ```
 
 The `fill` parameter is set to `True` for the example, where all squares are numbered.
