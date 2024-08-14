@@ -20,18 +20,18 @@ class grid():
         self.grid_size = grid_size
         self.edge_index = grid_size - 1
         
-        self._data = array()
+        self._data = []
         if fill == True:
             count = 0
             for _ in range(self.grid_size): # for each row
-                row = array()
+                row = []
                 for _ in range(self.grid_size): # for each item
                     count += 1
                     row.append([count])
                 self._data.append(row)
         else:
             for _ in range(self.grid_size): # for each row
-                row = array()
+                row = []
                 for _ in range(self.grid_size): # for each item
                     row.append([])
                 self._data.append(row)
@@ -56,25 +56,3 @@ class grid():
         y = self.edge_index - pos[1]
         x = pos[0]
         self._data[y][x] = value
-
-class array():
-    """For internal use, not intended to be accessed externally."""
-    
-    def __init__(self):
-        self._data: list[Any] = []
-
-    def __iter__(self):
-        for elem in self._data:
-            yield elem
-    
-    def __str__(self):
-        return str(self._data)
-
-    def append(self, item: Any):
-        self._data.append(item)
-    
-    def __getitem__(self, key: int):
-        return self._data[key]
-
-    def __setitem__(self, key: int, value: Any):
-        self._data[key] = value
