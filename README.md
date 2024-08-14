@@ -74,6 +74,17 @@ board[position].append(data)
 # [[4], [5], [6, 'a']],
 #
 # [[7], [8, 3, [2, 3, 4]], [9]]]
+
+import numpy as np
+pos = np.array([0, 0])
+board[pos] = ['0']
+print(board)
+
+# [[[1], [2], []],
+#
+# [[4], [5], [6, 'a']],
+#
+# [['0'], [8, 3, [2, 3, 4]], [9]]]
 ```
 
 The `fill` parameter is set to `True` for the example, where all squares are numbered.
