@@ -1,5 +1,7 @@
-from numpy.typing import NDArray
 from typing import Any
+
+from numpy.typing import NDArray
+
 
 class grid():
     """# Grid object class.
@@ -43,7 +45,7 @@ class grid():
         grid_str = "[" + grid_str[:-3] + "]"
         return grid_str
 
-    def __getitem__(self, pos: tuple[int, int] | list[int] | NDArray):
+    def __getitem__(self, pos: tuple[int, int] | list[int] | NDArray[Any]):
         y = self.edge_index - pos[1]
         x = pos[0]
         return self._data[y][x]
@@ -52,7 +54,7 @@ class grid():
         for elem in self._data:
             yield elem
     
-    def __setitem__(self, pos: tuple[int, int] | list[int] | NDArray, value: Any):
+    def __setitem__(self, pos: tuple[int, int] | list[int] | NDArray[Any], value: Any):
         y = self.edge_index - pos[1]
         x = pos[0]
         self._data[y][x] = value
